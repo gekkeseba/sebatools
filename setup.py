@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='sebatools',     # Package name
-    version='0.6.1',                  # Initial version
+    version='0.6.2',                  # Initial version
     description='A package to remove emojis from text and more...',
     author='Sebastiaan Hendriks',               # Your name
     author_email='sgtahendriks@gmail.com',
