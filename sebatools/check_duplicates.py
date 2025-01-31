@@ -4,7 +4,7 @@ def check_duplicates(spark, table_name, columns):
     duplicate_entries = df.join(duplicates, on=columns, how='inner')
     
     # Check if the display function is available
-    if 'display' in globals():
+    if 'display' in globals() and callable(globals()['display']):
         display(duplicate_entries)
     else:
         duplicate_entries.show()  # Use show() as a fallback
